@@ -17,4 +17,8 @@ public class RestClient {
     	UsersResponse response = client.target(REST_URI).request(MediaType.APPLICATION_JSON).get(UsersResponse.class);
     	return response;
     }
+    
+//    public Response createJsonEmployee(Employee emp) {
+//        return client.target(REST_URI).request(MediaType.APPLICATION_JSON).post(Entity.entity(emp, MediaType.APPLICATION_JSON));
+//    }
 }
